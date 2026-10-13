@@ -6,7 +6,7 @@ from train import quick_train
 st.set_page_config(page_title="Credit risk: catching more defaulters", page_icon="🏦", layout="wide")
 MODELS = sorted(p.stem for p in Path("models").glob("*.json"))
 
-st.title("Catching more defaulters")
+st.title("CREDIT RISK PREDICTION")
 st.write("A leak-free stacked ensemble with class weighting. Pick a dataset, review how it performed, then score a borrower.")
 have = bool(MODELS)
 if have:
